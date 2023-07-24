@@ -36,44 +36,44 @@ const App = () => {
             className: `${styles.card_small} ${styles.card_exp}`
         },
         {
-            src: 'https://wallpaperaccess.com/full/176937.jpg',
+            src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/JPC-00161-min.jpg',
             alt: '',
             caption: 'The water was freezing!',
             className: `${styles.card_small} ${styles.card_exp}`
         },
         {
-            src: 'https://img.freepik.com/fotos-gratis/floresta-do-outono_1182-869.jpg?w=2000',
+            src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/JPC-00141-min.jpg',
             alt: '',
             caption: 'The fall came early!',
             className: `${styles.card_medium} ${styles.card_exp}`
         },
         {
-            src: 'https://images.hdqwalls.com/wallpapers/beautiful-landscape-digital-art-4k-tj.jpg',
+            src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/264389329_1030618827513831_2122995098330504027_n.jpg',
             alt: '',
             caption: 'The water was freezing!',
             className: `${styles.card_large} ${styles.card_exp}`
         },
         {
-            src: 'https://external-preview.redd.it/vBmSeLVnhHRFlK0Se7WloKYhvOJhQ2pgftaesz33K30.png?auto=webp&s=dd6b2756b75924d866413cdeabcc3c202f5974c2',
+            src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/IMG_7497.jpeg',
             alt: '',
             caption: 'The water was freezing!',
             className: `${styles.card_small} ${styles.card_exp}`
         },
         {
-            src: 'https://www.estudokids.com.br/wp-content/uploads/2020/02/o-que-e-paisagem.jpg',
+            src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/297443524_3349104575318540_5132267655368688830_n.jpg',
             alt: '',
             caption: 'The water was freezing!',
             className: `${styles.card_small} ${styles.card_exp}`
         },
         {
-            src: 'https://i.pinimg.com/736x/09/45/b8/0945b873ddd15f862b82890f82767e39.jpg',
+            src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/CHARGRILLEDLAMB.jpeg',
             alt: '',
             caption: 'The water was freezing!',
             className: `${styles.card_medium} ${styles.card_exp}`
         },
         {
             src:
-                'https://c.wallhere.com/photos/ab/f5/AI_art_landscape_digital_art_ocean_view_reflection_rocks_sunset_clouds-2223954.jpg!d',
+                'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/AJ5A5918-2.jpg',
             alt: '',
             caption: 'The water was freezing!',
             className: `${styles.card_large} ${styles.card_exp}`

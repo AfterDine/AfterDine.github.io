@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import CloseIcon from '@mui/icons-material/Close';
 import styles from './listings.module.css';
+
 
 const App = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,7 +30,7 @@ const App = () => {
     };
     const images = [
         {
-            src: 'https://cdn.shopify.com/s/files/1/0001/9202/0527/products/quadros-democrart-gustavo-jacob-paisagem-idilica-wanaka-tree-NZ-galeria-de-arte-obras-de-arte_875x.jpg?v=1528209266',
+            src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/JPC-1652.jpg',
             alt: '',
             caption: 'The water was freezing!',
             className: `${styles.card_small} ${styles.card_exp}`
@@ -89,24 +91,28 @@ const App = () => {
                     </section>
 
                     <div className={styles.container_grid}>
+                        (
                         <Modal
                             open={showModal}
                             onClose={() => setShowModal(false)}
                             aria-labelledby="modal-modal-title"
                             aria-describedby="modal-modal-description"
+                            sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                overflow: 'scroll',
+                            }}
                         >
                             <Box
                                 sx={{
-                                    position: 'absolute',
-                                    top: '50%',
-                                    left: '50%',
-                                    transform: 'translate(-50%, -50%)',
+                                    position: 'relative',
+                                    width: '80vw',
+                                    maxWidth: '100%',
+                                    maxHeight: '80vh',
                                     bgcolor: 'background.paper',
                                     boxShadow: 24,
                                     p: 4,
-                                    maxWidth: '80%',
-                                    maxHeight: '80%',
-                                    overflow: 'hidden',
                                 }}
                             >
                                 <IconButton
@@ -129,18 +135,33 @@ const App = () => {
                                         justifyContent: 'center',
                                         height: '100%',
                                         width: '100%',
+                                        position: 'relative',
                                     }}
                                 >
                                     <img
                                         src={images[currentIndex].src}
                                         alt={images[currentIndex].alt}
                                         style={{
-                                            maxHeight: 'calc(100% - 48px)',
+                                            maxHeight: 'calc(80vh - 48px)', // Adjust the maxHeight to leave space for the button
                                             maxWidth: '100%',
+                                            width: 'auto', // This ensures the image scales proportionally
+                                            height: 'auto', // This ensures the image scales proportionally
                                             objectFit: 'contain',
                                         }}
                                     />
 
+                                    <Button
+                                        onClick={() => (window.location.href = '/bookings/1')}
+                                        variant="contained"
+                                        sx={{
+                                            position: 'absolute',
+                                            bottom: 16,
+                                            right: 16,
+                                            zIndex: 1,
+                                        }}
+                                    >
+                                        Book Now
+                                    </Button>
                                     <Box
                                         sx={{
                                             display: 'flex',
@@ -152,25 +173,17 @@ const App = () => {
                                             bottom: 8,
                                         }}
                                     >
-                                        <IconButton
-                                            aria-label="previous"
-                                            onClick={handlePrev}
-                                        >
+                                        <IconButton aria-label="previous" onClick={handlePrev}>
                                             <NavigateBeforeIcon />
                                         </IconButton>
 
-                                        <IconButton
-                                            aria-label="next"
-                                            onClick={handleNext}
-                                        >
+                                        <IconButton aria-label="next" onClick={handleNext}>
                                             <NavigateNextIcon />
                                         </IconButton>
                                     </Box>
                                 </Box>
                             </Box>
                         </Modal>
-
-
                         <div className={styles.carousel_images}>
                             {images.map((image, index) => (
                                 <div

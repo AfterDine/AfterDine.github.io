@@ -9,6 +9,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import styles from './listings.module.css';
 
 
+
 const App = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [showModal, setShowModal] = useState(false);
@@ -20,6 +21,10 @@ const App = () => {
             setCurrentIndex(currentIndex - 1);
         }
     };
+    const handleClick = (link) => {
+        window.location.href = link;
+    }
+
 
     const handleNext = () => {
         if (currentIndex === images.length - 1) {
@@ -32,51 +37,60 @@ const App = () => {
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/JPC-1652.jpg',
             alt: '',
-            caption: 'The water was freezing!',
-            className: `${styles.card_small} ${styles.card_exp}`
+            caption: 'Zaw preparing coconut noodles',
+            className: `${styles.card_small} ${styles.card_exp}`,
+            link: '/bookings/1'
         },
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/JPC-00161-min.jpg',
             alt: '',
-            caption: 'The water was freezing!',
-            className: `${styles.card_small} ${styles.card_exp}`
+            caption: 'Vermicelli Prawn Salad',
+            className: `${styles.card_small} ${styles.card_exp}`,
+            link: '/bookings/1'
         },
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/JPC-00141-min.jpg',
             alt: '',
-            caption: 'The fall came early!',
-            className: `${styles.card_medium} ${styles.card_exp}`
+            caption: 'Burmese Fermented Tea Salad',
+            className: `${styles.card_medium} ${styles.card_exp}`,
+            link: '/bookings/1'
+
         },
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/264389329_1030618827513831_2122995098330504027_n.jpg',
             alt: '',
-            caption: 'The water was freezing!',
-            className: `${styles.card_large} ${styles.card_exp}`
+            caption: 'Skilled Chef preparing Silk Tofu',
+            className: `${styles.card_large} ${styles.card_exp}`,
+            link: '/bookings/2'
         },
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/IMG_7497.jpeg',
             alt: '',
-            caption: 'The water was freezing!',
-            className: `${styles.card_small} ${styles.card_exp}`
+            caption: 'Prime Ribeye Steak with Chimichurri Sauce',
+            className: `${styles.card_small} ${styles.card_exp}`,
+            link: '/bookings/3'
         },
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/297443524_3349104575318540_5132267655368688830_n.jpg',
             alt: '',
-            caption: 'The water was freezing!',
-            className: `${styles.card_small} ${styles.card_exp}`
+            caption: 'Sliced Abalone with Seasonal Vegetables',
+            className: `${styles.card_small} ${styles.card_exp}`,
+            link: '/bookings/2'
         },
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/CHARGRILLEDLAMB.jpeg',
             alt: '',
-            caption: 'The water was freezing!',
-            className: `${styles.card_medium} ${styles.card_exp}`
+            caption: 'Mark barbecuing lamb chops',
+            className: `${styles.card_medium} ${styles.card_exp}`,
+            link: '/bookings/3'
         },
         {
             src:
                 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/AJ5A5918-2.jpg',
             alt: '',
-            caption: 'The water was freezing!',
-            className: `${styles.card_large} ${styles.card_exp}`
+            caption: 'Pork Belly with Caramelised Apples and Cider Sauce',
+            className: `${styles.card_large} ${styles.card_exp}`,
+            link: '/bookings/3'
         }
     ];
 
@@ -91,7 +105,7 @@ const App = () => {
                     </section>
 
                     <div className={styles.container_grid}>
-                        (
+
                         <Modal
                             open={showModal}
                             onClose={() => setShowModal(false)}
@@ -151,7 +165,7 @@ const App = () => {
                                     />
 
                                     <Button
-                                        onClick={() => (window.location.href = '/bookings/1')}
+                                        onClick={() => { handleClick(images[currentIndex].link) }}
                                         variant="contained"
                                         sx={{
                                             position: 'absolute',

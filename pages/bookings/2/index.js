@@ -18,14 +18,14 @@ export default function Bookings() {
                     <Carousel showThumbs={false} showStatus={false}>
                         <div>
                             <img
-                                src="https://i.pinimg.com/originals/18/9d/dc/189ddc1221d9c1c779dda4ad37a35fa1.png"
+                                src="https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/264389329_1030618827513831_2122995098330504027_n.jpg"
                                 className={styles.product}
                                 alt="Shoes"
                             />x``
                         </div>
                         <div>
                             <img
-                                src="https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/JPC-00127.jpg?t=2023-07-24T01%3A05%3A30.746Z" // Replace with the URL of the second image
+                                src="https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/297443524_3349104575318540_5132267655368688830_n.jpg" // Replace with the URL of the second image
                                 className={styles.product}
                                 alt="Shoes"
                             />

@@ -2,9 +2,18 @@ import Head from 'next/head';
 import styles from './bookings.module.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { useState } from 'react';
 
 
 export default function Bookings() {
+    const [isSuccess, setIsSuccess] = useState(false);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        // Perform any form submission logic here
+        // For this example, we will just show the success message
+        setIsSuccess(true);
+    };
     return (
         <div className={styles.mainscreen}>
             <Head>
@@ -41,7 +50,7 @@ export default function Bookings() {
                     </Carousel>
                 </div>
                 <div className={styles.rightside}>
-                    <form action="">
+                    <form action="" onSubmit={handleSubmit}>
                         <h1>CheckOut</h1>
                         <h2>Payment Information</h2>
                         <div className={styles['input-container']}>
@@ -80,6 +89,11 @@ export default function Bookings() {
                             CheckOut
                         </button>
                     </form>
+                    {isSuccess && (
+                        <div className={styles.success}>
+                            <p>Booking successful! Thank you for your booking.</p>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

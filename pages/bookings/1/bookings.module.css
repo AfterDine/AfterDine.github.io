@@ -130,4 +130,15 @@
         padding: 0.5rem 3rem 3rem 2rem;
         border-radius: 0;
     }
+
+    /* ... Other styles ... */
+
+    /* Styles for the success prompt */
+    .success {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        text-align: center;
+    }
 }

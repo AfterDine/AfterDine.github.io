@@ -71,6 +71,146 @@
         href="https://www.growyouragency.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.growyouragency.com%2F" />
     <link rel="alternate" type="text/xml+oembed"
         href="https://www.growyouragency.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.growyouragency.com%2F&#038;format=xml" />
+
+    <style>
+        button {
+            margin: 20px;
+        }
+
+        .custom-btn {
+            width: 130px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+                7px 7px 20px 0px rgba(0, 0, 0, .1),
+                4px 4px 5px 0px rgba(0, 0, 0, .1);
+            outline: none;
+        }
+
+        /* 1 */
+        .btn-1 {
+            border: none;
+            background: rgb(21, 153, 80);
+            background: linear-gradient(0deg, rgba(17, 233, 114 1) 0%, rgba(17, 233, 114) 100%);
+            color: #fff;
+            overflow: hidden;
+            width: 250px;
+            /* Adjust the width */
+            height: 60px;
+            /* Adjust the height */
+            border-radius: 30px;
+            /* Half of the height value to create an oval shape */
+            position: relative;
+        }
+
+        .btn-1:hover {
+            text-decoration: none;
+            color: #fff;
+            opacity: 0.7;
+        }
+
+        .btn-1:before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            top: -180px;
+            left: 0;
+            width: 30px;
+            height: 100%;
+            background-color: #fff;
+            animation: shiny-btn1 3s ease-in-out infinite;
+        }
+
+        .btn-1:hover:before {
+            opacity: 0;
+        }
+
+        .btn-1:active {
+            box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+        }
+
+
+
+        /* --------------------------------------------------------------------------------------- */
+
+        .btn-11 {
+            border: none;
+            background: rgb(251, 33, 117);
+            background: linear-gradient(0deg, rgba(251, 33, 117, 1) 0%, rgba(234, 76, 137, 1) 100%);
+            color: #fff;
+            overflow: hidden;
+            width: 250px;
+            /* Adjust the width */
+            height: 60px;
+            /* Adjust the height */
+            border-radius: 30px;
+            /* Half of the height value to create an oval shape */
+            position: relative;
+        }
+
+        .btn-11:hover {
+            text-decoration: none;
+            color: #fff;
+            opacity: 0.7;
+        }
+
+        .btn-11:before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            top: -180px;
+            left: 0;
+            width: 30px;
+            height: 100%;
+            background-color: #fff;
+            animation: shiny-btn1 3s ease-in-out infinite;
+        }
+
+        .btn-11:hover:before {
+            opacity: 0;
+        }
+
+        .btn-11:active {
+            box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        @-webkit-keyframes shiny-btn1 {
+            0% {
+                -webkit-transform: scale(0) rotate(45deg);
+                opacity: 0;
+            }
+
+            80% {
+                -webkit-transform: scale(0) rotate(45deg);
+                opacity: 0.5;
+            }
+
+            81% {
+                -webkit-transform: scale(4) rotate(45deg);
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scale(50) rotate(45deg);
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 
 <body data-rsssl=1
@@ -92,7 +232,21 @@
                     <span id="gy-animated-word"></span> Private home dining
                 </h1>
                 <p>Connect with passionate hosts and talented chefs today!</p>
-                <a class="gy-btn" href="/listings">Get Started</a>
+                <div style="display: inline-block;">
+                    <a class="gy-btn" href="/listings" style="margin-bottom: 10px; display: block;">Get Started</a>
+                    <button style="display: block; margin-bottom: 10px;" href="https://forms.gle/JR4jcd7ZPeNCWRQo8" ;
+                        class="custom-btn btn-1">For
+                        Hosts</button>
+                    <button style="display: block; margin-bottom: 10px;" href="https://forms.gle/3fm5AxgcpgA2Uezv6"
+                        class="custom-btn btn-11">For Chefs<div class="dot" style="display: inline-block;"></div>
+                    </button>
+                </div>
+
+
+
+
+
+
 
             </div>
         </div>

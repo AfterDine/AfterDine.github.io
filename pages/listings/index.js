@@ -35,25 +35,40 @@ const App = () => {
     };
     const images = [
         {
+            src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/290590284_1300368313703895_1273732252015923819_n.jpg',
+            alt: '',
+            caption: 'Pasta paradise in the Lion City.',
+            className: `${styles.card_small} ${styles.card_exp}`,
+            link: 'https://www.instagram.com/after_dine/'
+        },
+        {
+            src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/320393154_2035136470023794_3759007783414926639_n.jpg',
+            alt: '',
+            caption: 'Yellow delight, a taste of sunshine.',
+            className: `${styles.card_small} ${styles.card_exp}`,
+            link: 'https://www.instagram.com/after_dine/'
+        },
+        {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/JPC-1652.jpg',
             alt: '',
             caption: 'Zaw preparing coconut noodles',
             className: `${styles.card_small} ${styles.card_exp}`,
-            link: '/bookings/1'
+            link: 'https://www.instagram.com/after_dine/'
         },
+
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/JPC-00161-min.jpg',
             alt: '',
             caption: 'Vermicelli Prawn Salad',
             className: `${styles.card_small} ${styles.card_exp}`,
-            link: '/bookings/1'
+            link: 'https://www.instagram.com/after_dine/'
         },
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/JPC-00141-min.jpg',
             alt: '',
             caption: 'Burmese Fermented Tea Salad',
             className: `${styles.card_medium} ${styles.card_exp}`,
-            link: '/bookings/1'
+            link: 'https://www.instagram.com/after_dine/'
 
         },
         {
@@ -61,28 +76,28 @@ const App = () => {
             alt: '',
             caption: 'Skilled Chef preparing Silk Tofu',
             className: `${styles.card_large} ${styles.card_exp}`,
-            link: '/bookings/2'
+            link: 'https://www.instagram.com/after_dine/'
         },
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/IMG_7497.jpeg',
             alt: '',
             caption: 'Prime Ribeye Steak with Chimichurri Sauce',
             className: `${styles.card_small} ${styles.card_exp}`,
-            link: '/bookings/3'
+            link: 'https://www.instagram.com/after_dine/'
         },
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/297443524_3349104575318540_5132267655368688830_n.jpg',
             alt: '',
             caption: 'Sliced Abalone with Seasonal Vegetables',
             className: `${styles.card_small} ${styles.card_exp}`,
-            link: '/bookings/2'
+            link: 'https://www.instagram.com/after_dine/'
         },
         {
             src: 'https://bkdkkjyegspmjpmorsyw.supabase.co/storage/v1/object/public/images2/CHARGRILLEDLAMB.jpeg',
             alt: '',
             caption: 'Mark barbecuing lamb chops',
             className: `${styles.card_medium} ${styles.card_exp}`,
-            link: '/bookings/3'
+            link: 'https://www.instagram.com/after_dine/'
         },
         {
             src:
@@ -90,7 +105,7 @@ const App = () => {
             alt: '',
             caption: 'Pork Belly with Caramelised Apples and Cider Sauce',
             className: `${styles.card_large} ${styles.card_exp}`,
-            link: '/bookings/3'
+            link: 'https://www.instagram.com/after_dine/'
         }
     ];
 
